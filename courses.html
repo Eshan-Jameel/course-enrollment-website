@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Courses | EduEnroll</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EduEnroll</h1>
+                <p>Your Gateway to Knowledge</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="enrollment.html">My Enrollments</a></li>
+                    <li><a href="login.html" class="btn">Login/Signup</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-search">
+            <div class="container">
+                <h2>Browse Available Courses</h2>
+                <div class="search-filters">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search courses...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="filter-options">
+                        <select id="department">
+                            <option value="">All Departments</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="business">Business</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="arts">Arts</option>
+                        </select>
+                        <select id="level">
+                            <option value="">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                        <select id="schedule">
+                            <option value="">Any Schedule</option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                            <option value="weekend">Weekend</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-list">
+            <div class="container">
+                <div class="courses-grid">
+                    <!-- Course cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About EduEnroll</h3>
+                    <p>An innovative platform connecting students with quality education opportunities.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="courses.html">Browse Courses</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EduEnroll. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>
